@@ -11,3 +11,5 @@ numpy
 streamlit
 langgraph
 transformers
+torchvision
+torchaudio
