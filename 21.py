@@ -84,7 +84,7 @@ def generate_llm_response(user_input, retrieved_data, chat_history):
     return response
 
 # Google Maps related functions
-API_KEY = "AIzaSyD8UJKmUXiv9gMvZIulNKksm4j97Fz5oqk"  # Replace with your actual API key
+#API_KEY = ""  # Replace with your actual API key
 
 def get_distance_time(origin, destination):
     url = "https://maps.googleapis.com/maps/api/distancematrix/json"
