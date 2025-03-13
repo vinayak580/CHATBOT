@@ -14,6 +14,11 @@ from langchain.schema import Document
 from dataclasses import dataclass, field
 from typing import List, Optional
 from langgraph.graph import StateGraph
+from dotenv import load_dotenv
+import os
+
+
+load_dotenv()
 
 
 
@@ -22,7 +27,7 @@ from langgraph.graph import StateGraph
 # ─────────────────────────────────────────────
 
 # Set up your Groq API key (replace with your actual key)
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # Instantiate LLM (using ChatGroq) - note that different agents in your code use similar instantiations.
 llm = ChatGroq(api_key=GROQ_API_KEY, model_name="llama-3.3-70b-versatile")
 
@@ -84,7 +89,7 @@ def generate_llm_response(user_input, retrieved_data, chat_history):
     return response
 
 # Google Maps related functions
-#API_KEY = ""  # Replace with your actual API key
+API_KEY = os.getenv("GOOGLE_API_KEY")  # Replace with your actual API key
 
 def get_distance_time(origin, destination):
     url = "https://maps.googleapis.com/maps/api/distancematrix/json"
