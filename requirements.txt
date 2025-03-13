@@ -10,4 +10,4 @@ faiss-cpu
 numpy
 streamlit
 langgraph
-
+transformers
