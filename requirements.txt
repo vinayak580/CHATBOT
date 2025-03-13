@@ -3,3 +3,16 @@ langchain
 torch
 sentence-transformers
 langchain_groq
+requests
+bs4
+faiss-cpu
+numpy
+streamlit
+faiss
+json
+string
+dataclasses
+typing
+langgraph
+groq
+googlemaps
