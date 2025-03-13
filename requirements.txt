@@ -1,6 +1,7 @@
 pandas
 langchain
 torch
+requests
 sentence-transformers
 langchain_groq
 requests
@@ -9,4 +10,4 @@ faiss-cpu
 numpy
 streamlit
 langgraph
-googlemaps
+
