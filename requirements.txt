@@ -1,0 +1,5 @@
+pandas
+langchain
+torch
+sentence-transformers
+langchain_groq
